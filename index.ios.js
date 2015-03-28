@@ -17,14 +17,21 @@ var textinputstyle = (x) => ({
   height: 20,
   // Uncomment this and textinput 2 & 3 won't work
   top: x * 50,
+  borderWidth: 1,
+  borderColor: 'green',
 });
 
 var styles = StyleSheet.create({
   container: {
     flex: 1,
     top: 50,
+    borderWidth: 1,
+    borderColor: 'blue',
   },
-  subc: {},
+  subc: {
+    borderWidth: 1,
+    borderColor: 'red',
+  },
   textinput: textinputstyle(1),
   textinput2: textinputstyle(2),
   textinput3: textinputstyle(3),
@@ -53,4 +60,3 @@ var App = React.createClass({
 });
 
 AppRegistry.registerComponent('textinputbug', () => App);
-module.exports = App;
