@@ -40,7 +40,7 @@ var styles = StyleSheet.create({
 
 var Bug2 = React.createClass({
   render() {
-    return <View style={styles.subc}>
+    return <View style={styles.subc} pointerEvents='box-none'>
       <TextInput style={styles.textinput3} placeholder="You can't use me too" />
     </View>
   }
@@ -50,7 +50,7 @@ var App = React.createClass({
   render() {
     return <View style={styles.container}>
       <TextInput style={styles.textinput} placeholder='Works!' />
-      <View style={styles.subc}>
+      <View style={styles.subc} pointerEvents='box-none'>
         <TextInput style={styles.textinput2} placeholder="You can't use me" />
       </View>
       <Bug2/>
