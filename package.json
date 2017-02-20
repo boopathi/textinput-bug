@@ -6,7 +6,7 @@
     "start": "node_modules/react-native/packager/packager.sh"
   },
   "dependencies": {
-    "css-layout": "0.0.2",
-    "react-native": "^0.3.1"
+    "css-layout": "1.1.1",
+    "react-native": "^0.41.2"
   }
 }
